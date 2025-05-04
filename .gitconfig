@@ -1,8 +1,8 @@
 [user]
-  name = Rustam Gasanov
-  email = ragasanov@gmail.com
+  name = Tom Gasaner
+  email = tomgasaner@gmail.com
 [github]
-  user = rustamgasanov
+  user = tomgasaner
 [alias]
   l   = log --pretty='format:%C(yellow)%h%C(reset) %C(blue)%ad%C(reset) %s%C(red)%d%C(reset) %C(green)%an%C(reset), %C(cyan)%ar%C(reset)' --date=short --graph
   dcs = diff --staged --color
@@ -19,3 +19,7 @@
   excludesfile = ~/.gitignore_global
 [color]
   ui = true
+[http]
+	postBuffer = 157286400
+[credential]
+	helper = store
