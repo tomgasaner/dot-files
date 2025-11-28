@@ -25,7 +25,7 @@ install:
 	@echo "→ Installing Meslo Nerd font"
 	cp -n Meslo\ LG\ M\ DZ\ Regular\ Nerd\ Font\ Complete.ttf ~/Library/Fonts || :
 
-.PHONY: install-nvim # Install rustamgasanov/nvim-installer
+.PHONY: install-nvim # Install tomgasaner/nvim-installer
 install-nvim:
 	@echo "→ Pulling nvim-installer"
 	if [ -d $(NVIM_INSTALLER_DIR) ] ; then \
@@ -35,7 +35,7 @@ install-nvim:
 	fi
 	cd $(NVIM_INSTALLER_DIR) && make install
 
-.PHONY: remove-nvim # Remove rustamgasanov/nvim-installer
+.PHONY: remove-nvim # Remove tomgasaner/nvim-installer
 remove-nvim:
 	if [ ! -d $(NVIM_INSTALLER_DIR) ] ; then \
 		echo "Nvim-installer is not installed."; \
