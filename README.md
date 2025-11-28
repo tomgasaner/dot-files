@@ -22,7 +22,7 @@ Clone this repo to the home `~` directory:
 ```bash
 $ cd ~
 $ git init
-$ git remote add origin https://github.com/rustamgasanov/dot-files.git
+$ git remote add origin https://github.com/tomgasaner/dot-files.git
 $ git pull origin main
 ```
 
@@ -31,8 +31,8 @@ Run `make` command to see the available options:
 ```bash
 $ make
 install              Install iterm2, tmux, zsh, font
-install-nvim         Install rustamgasanov/nvim-installer
-remove-nvim          Remove rustamgasanov/nvim-installer
+install-nvim         Install tomgasaner/nvim-installer
+remove-nvim          Remove tomgasaner/nvim-installer
 ```
 
 Running `make install` will install or upgrade the components. Then:
