@@ -10,10 +10,11 @@ Sets up and keeps up to date the development tools.
 
 ## Contents
 
-- [iterm2](https://iterm2.com/)
+- [iTerm2](https://iterm2.com/)
 - [tmux](https://github.com/tmux/tmux/wiki)
 - [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
 - `Meslo LG M DZ Regular Nerd Font Complete.ttf` - sets up the font, required by `NvimTree` and `Lualine(Status line)`
+- `tokyonight_moon.itermcolors` - a Tokyo Night iTerm theme
 
 ## Instructions
 
@@ -38,7 +39,7 @@ remove-nvim          Remove tomgasaner/nvim-installer
 Running `make install` will install or upgrade the components. Then:
 
 1. double-click on `Meslo LG M DZ Regular Nerd Font Complete.ttf` to add the Meslo font
-2. double-click on `tokyonight_moon.itermcolors` to add a TokyoNight iTerm theme
+2. double-click on `tokyonight_moon.itermcolors` to add a Tokyo Night iTerm theme
 3. configure `.gitconfig` with your credentials
 4. iTerm Settings → Profiles → Text - select `Meslo Nerd` font
     1. (Optional) Set the font size to 19
