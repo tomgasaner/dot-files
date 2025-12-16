@@ -26,7 +26,7 @@ $ git remote add origin https://github.com/tomgasaner/dot-files.git
 $ git pull origin main
 ```
 
-Run `make` command to see the available options:
+Run `make` to see the available commands:
 
 ```bash
 $ make
@@ -37,11 +37,14 @@ remove-nvim          Remove tomgasaner/nvim-installer
 
 Running `make install` will install or upgrade the components. Then:
 
-- configure `.gitconfig` with your credentials
-- iTerm Preferences → Profiles → Text - select `Meslo Nerd` font
-- iTerm Preferences → Profiles → Colors - select `tokyonight_moon` preset(add by double-clicking the file)
+1. double-click on `Meslo LG M DZ Regular Nerd Font Complete.ttf` to add the Meslo font
+2. double-click on `tokyonight_moon.itermcolors` to add a TokyoNight iTerm theme
+3. configure `.gitconfig` with your credentials
+4. iTerm Settings → Profiles → Text - select `Meslo Nerd` font
+    1. (Optional) Set the font size to 19
+5. iTerm Settings → Profiles → Colors - select `tokyonight_moon` preset
 
-Running `make install-nvim` additionally installs or upgrades [my Neovim distribution](https://github.com/rustamgasanov/nvim-installer).
+Running `make install-nvim` additionally installs or upgrades [my Neovim distribution](https://github.com/tomgasaner/nvim-installer).
 
 ## References
 
