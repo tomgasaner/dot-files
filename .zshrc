@@ -39,7 +39,7 @@ export UPDATE_ZSH_DAYS=14
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras)
+plugins=(git git-extras kubectl)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -47,10 +47,28 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-# Customize to your needs...
-export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/local/opt/ruby/bin:$PATH:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin"
+# MacOS Apple Silicon only, homebrew
+[[ -d /opt/homebrew/bin ]] && export PATH="/opt/homebrew/bin:$PATH"
 
-# Example aliases
+# User bin
+export PATH="$HOME/bin:$PATH"
+
+# Linux/Arch only
+[[ "$OSTYPE" == "linux-gnu"* ]] && export PATH="$HOME/.local/bin:$PATH"
+
+# Bun completions
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+[ -s "$BUN_INSTALL/_bun" ] && source "$BUN_INSTALL/_bun"
+
+# Kubeswitch: https://github.com/danielfoehrKn/kubeswitch/blob/master/docs/installation.md
+if command -v switcher &>/dev/null; then
+  source <(switcher init zsh)
+  source <(switch completion zsh)
+  alias s=switch
+fi
+
+# Aliases
 alias ll="ls -alFh"
 alias g="nocorrect git"
 alias grep="GREP_COLOR='0;30;43' grep --color"
@@ -62,5 +80,5 @@ alias be="bundle exec"
 alias d="docker"
 alias dc="docker-compose"
 alias n="nvim"
-alias k="kubectl"
 alias t="terraform"
+
