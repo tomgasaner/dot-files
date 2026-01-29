@@ -2,11 +2,14 @@
 
 Sets up and keeps up to date the development tools.
 
+Works with Apple Silicon Macs and Arch Linux.
+
 ## Requirements
 
-- [Homebrew](https://brew.sh/)
+- zsh
 - git
 - curl
+- Only for MacOS: [Homebrew](https://brew.sh/)
 
 ## Contents
 
