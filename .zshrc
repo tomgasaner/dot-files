@@ -3,9 +3,12 @@ ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+if [[ -n "$SSH_CONNECTION" ]] || [[ "$TERM" == "linux" ]]; then
+    # Logging via SSH or TTY(directly) won't support Powerline/Nerd fonts(agnoster theme)
+    ZSH_THEME="robbyrussell"
+else
+    ZSH_THEME="agnoster"
+fi
 
 # To remove "user@hostname" from the beginning of the prompt
 DEFAULT_USER=$USER
