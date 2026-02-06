@@ -54,10 +54,7 @@ export LC_ALL=en_US.UTF-8
 [[ -d /opt/homebrew/bin ]] && export PATH="/opt/homebrew/bin:$PATH"
 
 # User bin
-export PATH="$HOME/bin:$PATH"
-
-# Linux/Arch only
-[[ "$OSTYPE" == "linux-gnu"* ]] && export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 
 # Bun completions
 export BUN_INSTALL="$HOME/.bun"
