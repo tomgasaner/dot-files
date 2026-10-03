@@ -5,5 +5,8 @@
 !.gitignore_global
 !.zshrc
 !Makefile
-!Meslo\ LG\ M\ DZ\ Regular\ Nerd\ Font\ Complete.ttf
+!TerminessNerdFontMono-Bold.ttf
+!TerminessNerdFontMono-BoldItalic.ttf
+!TerminessNerdFontMono-Italic.ttf
+!TerminessNerdFontMono-Regular.ttf
 !tokyonight_moon.itermcolors

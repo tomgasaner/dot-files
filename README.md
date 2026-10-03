@@ -16,7 +16,7 @@ Works with Apple Silicon Macs and Arch Linux.
 - [iTerm2](https://iterm2.com/)
 - [tmux](https://github.com/tmux/tmux/wiki)
 - [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
-- `Meslo LG M DZ Regular Nerd Font Complete.ttf` - sets up the font, required by `NvimTree` and `Lualine(Status line)`
+- `TerminessNerdFontMono-*.ttf` - sets up the (linux/arch default) font with Nerd icons, required by `NvimTree` and `Lualine(Status line)`
 - `tokyonight_moon.itermcolors` - a Tokyo Night iTerm theme
 
 ## Instructions
@@ -41,11 +41,14 @@ remove-nvim          Remove tomgasaner/nvim-installer
 
 Running `make install` will install or upgrade the components. Then:
 
-1. double-click on `Meslo LG M DZ Regular Nerd Font Complete.ttf` to add the Meslo font
+1. double-click on all `TerminessNerdFontMono-*.ttf` fonts to add them
 2. double-click on `tokyonight_moon.itermcolors` to add a Tokyo Night iTerm theme
 3. configure `.gitconfig` with your credentials
-4. iTerm Settings → Profiles → Text - select `Meslo Nerd` font
-    1. (Optional) Set the font size to 19
+4. iTerm Settings → Profiles → Text - select `Terminess Nerd Font Mono` font
+    1. `Font size` -> `23`
+    2. `v|i` -> `90`
+    3. `Thin Strokes` -> `Never`
+    4. `Anti-aliased` -> `On`
 5. iTerm Settings → Profiles → Colors - select `tokyonight_moon` preset
 
 Running `make install-nvim` additionally installs or upgrades [my Neovim distribution](https://github.com/tomgasaner/nvim-installer).
